@@ -1,0 +1,27 @@
+.catalog-grid
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px))
+    gap: 1.25rem
+    justify-content: center
+    &-link
+        display: flex
+        align-items: center
+        justify-content: center
+        text-decoration: none
+
+@media (max-width: 1024px)
+    .catalog-grid
+        grid-template-columns: repeat(auto-fill, minmax(200px, 200px))
+        gap: 1rem
+
+@media (max-width: 576px)
+    .catalog-grid
+        grid-template-columns: repeat(auto-fill, minmax(170px, 170px))
+        grid-auto-rows: 70px
+        gap: 0.5rem
+
+@media (max-width: 425px)
+    .catalog-grid
+        grid-template-columns: repeat(auto-fill, minmax(140px, 140px))
+        gap: 0.5rem

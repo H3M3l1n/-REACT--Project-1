@@ -1,0 +1,34 @@
+.filter-item-parent {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0.5rem;
+}
+
+.filter-list-child {
+  padding-left: 1.5rem;
+  list-style: none;
+  overflow: hidden;
+}
+
+.filter-button {
+  margin: 0;
+  color: #2c2c2c;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.filter-button-parent {
+  padding: 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-weight: bold;
+}
+.filter-button:hover {
+  color: #0081c2;
+}
+.filter-button-active {
+  color: #0081c2;
+}/*# sourceMappingURL=filteritemparent.css.map */

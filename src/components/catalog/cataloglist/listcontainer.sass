@@ -1,0 +1,28 @@
+@import "../../../sass/var"
+
+.list
+    width: 100%
+    border-collapse: collapse
+    &-container
+        max-height: calc( 100% - 3rem )
+        overflow-y: auto
+        &::-webkit-scrollbar
+            width: 0.5rem
+        &::-webkit-scrollbar-thumb
+            background-color: $scheme-color
+            &:hover
+                background-color: $scrollbar-hover-color
+        &::-webkit-scrollbar-track-piece:start
+            background-color: transparent
+            margin-top: 60px
+
+.column-name
+    min-width: 50%
+
+.column-amount
+    display: none
+
+.column-unit,
+.column-price
+    width: 100px
+    max-width: 16.66%

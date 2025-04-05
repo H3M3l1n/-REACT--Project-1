@@ -1,0 +1,23 @@
+@import "../../../sass/var"
+
+.home-catalog
+    width: 100%
+    flex-direction: column
+    align-items: center
+    background-color: $primary-color
+    &-wrapper
+        width: 100%
+        max-width: 1400px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.catalog-text-name
+    margin: 0 0 2rem 0
+    font-size: 3rem
+    color: white
+    text-shadow: $primary-shadow
+
+@media (max-width: 1024px)
+    .catalog-text-name
+        font-size: 2rem

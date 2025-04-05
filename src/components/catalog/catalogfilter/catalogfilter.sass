@@ -1,0 +1,32 @@
+@import "../../../sass/var"
+
+.catalog-filter
+    width: 20%
+    min-width: 250px
+    height: 100%
+    padding: 3rem 1rem 0
+    display: flex
+    flex-direction: row
+    align-items: center
+    border-right: $primary-border
+    background-color: $secondary-color
+    box-sizing: border-box
+
+@media (max-width: 1024px)
+    .catalog-filter
+        max-height: 100%
+        width: calc( 320px - 1.5rem )
+        padding: 1rem 1.5rem 1rem 1rem
+        position: absolute
+        left: calc( -320px + 3rem )
+        top: 0
+        transition: left 1s
+        z-index: 999
+        &-active
+            left: 0
+
+@media (max-width: 425px)
+    .catalog-filter
+        min-width: calc( 320px - 1.5rem )
+        left: calc( -320px + 2.5rem )
+        padding: 1rem

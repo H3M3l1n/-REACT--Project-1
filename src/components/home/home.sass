@@ -1,0 +1,23 @@
+@import "../../sass/var"
+
+.home
+    width: 100%
+    min-width: 320px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $primary-color
+    &-section
+        padding: 2rem
+        display: flex
+        width: 100%
+        border-bottom: $primary-border
+        box-sizing: border-box
+        overflow: hidden
+
+@media (max-width: 425px)
+    .home
+        min-width: 300px
+        &-section
+            padding: 1rem

@@ -1,0 +1,29 @@
+@import "../../../sass/var"
+
+.filter-item-parent
+    width: fit-content
+    margin-top: 0.5rem
+
+.filter-list-child
+    padding-left: 1.5rem
+    list-style: none
+    overflow: hidden
+
+.filter-button
+    margin: 0
+    color: $primary-color
+    font-family: $font-family
+    font-size: 1rem
+    text-decoration: none
+    cursor: pointer
+    transition: color 0.25s
+    &-parent
+        padding: 0
+        background: none
+        border: none
+        text-align: left
+        font-weight: bold
+    &:hover
+        color: $scheme-color
+    &-active
+        color: $scheme-color

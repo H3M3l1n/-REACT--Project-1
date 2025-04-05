@@ -1,0 +1,23 @@
+@import "../../../sass/var"
+
+.list-body-row
+    height: 30px
+    &:nth-child(odd)
+        background-color: $catalogList-row-color
+    &:last-child
+        border-bottom: $primary-border
+
+.list-body-column
+    color: $primary-color
+    font-weight: 500
+    border-right: $primary-border
+    &:last-child
+        border-right: none
+
+.list-body-column.column-name
+    padding-left: 1rem
+    text-align: start
+
+@media (max-width: 425px)
+    .list-body-column.column-name
+        padding-left: 0.5rem

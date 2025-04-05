@@ -1,0 +1,30 @@
+@import "../../../sass/var"
+    
+.filter-container
+    width: 100%
+    height: 100%
+
+.filter-list
+    display: flex
+    flex-direction: column
+    height: calc( 100% - 5rem )
+    margin-top: 0.5rem
+    padding-left: 0.5rem
+    overflow-y: scroll
+    &::-webkit-scrollbar
+        width: 0.5rem
+    &::-webkit-scrollbar-thumb
+        background-color: $scheme-color
+        &:hover
+            background-color: $scrollbar-hover-color
+
+.filter-list-parent
+    padding: 0
+    list-style: none
+    &:last-of-type
+        margin: 0
+
+@media (max-width: 1024px)
+    .filter-list
+        height: 100%
+        margin-top: 0

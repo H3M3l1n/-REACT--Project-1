@@ -1,0 +1,67 @@
+@import "../../sass/var"
+
+.header
+    position: absolute
+    left: 0
+    right: 0
+    width: 100%
+    padding: 1rem 0
+    height: 10rem
+    display: flex
+    align-items: center
+    justify-content: center
+    box-sizing: border-box
+    z-index: 999
+    &-wrapper
+        position: relative
+        width: 100%
+        height: 100%
+        max-width: 1400px
+        padding: 0 1rem
+        display: flex
+        align-items: center
+        box-sizing: border-box
+    &-logo
+        height: 100%
+        width: 20%
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        &-image
+            max-height: 100%
+            filter: drop-shadow($primary-shadow)
+    &-link
+        height: 100%
+    &-nav
+        max-height: 160px
+        width: 60%
+        min-width: 695px
+        display: flex
+        align-items: center
+        justify-content: center
+//
+// Column header version for 1024px
+//
+// @media (max-width: 1024px)
+//     .header
+//         height: unset
+//         margin: 0
+//         &-wrapper
+//             flex-direction: column
+//
+@media (max-width: 1024px)
+    .header
+        height: 12rem
+        &-wrapper
+            width: 600px
+            min-width: 300px
+            flex-direction: row
+            justify-content: space-between
+        &-logo
+            &-image
+                max-height: 100%
+                filter: none
+        &-nav
+            height: 160px
+            width: unset
+            min-width: unset

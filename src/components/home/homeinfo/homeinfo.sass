@@ -1,0 +1,85 @@
+@import "../../../sass/var"
+
+.home-info
+    width: 100%
+    flex-direction: column
+    align-items: center
+    background-color: $primary-color
+    &-wrapper
+        width: 100%
+        max-width: 1400px
+        box-sizing: border-box
+
+.info-text
+    text-align: center
+    &-name
+        margin: 0 0 2rem 0
+        font-size: 3rem
+        font-weight: 600
+        color: $secondary-font-color
+        text-shadow: $primary-shadow
+
+.info-grid
+    display: grid
+    grid-template-columns: auto auto auto
+    &-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        // justify-content: center
+        padding: 2rem
+        box-sizing: border-box
+        border-bottom: $secondary-border
+        border-right: $secondary-border
+        &:nth-child(n+4)
+            border-bottom: none
+        &:nth-child(3n)
+            border-right: none
+        >.item-name
+            margin: 0 0 1rem
+            color: $secondary-font-color
+            font-size: 2rem
+            text-align: center
+        >.item-text-container
+            >.item-text
+                margin: 0
+                color: $secondary-font-color
+                text-align: center
+                font-size: 1.5rem
+                line-height: 2rem
+
+.grid-fa-icon
+    width: 4.5rem
+    height: 4.5rem
+    margin-bottom: 2rem
+    color: $secondary-font-color
+
+@media (max-width: 1024px)
+    .info-text
+        &-name
+            font-size: 2rem
+
+    .info-grid
+        &-item
+            padding: 1rem
+            >.item-name
+                margin: 1rem 0
+                font-size: 1.5rem
+            >.item-text
+                margin: 0
+                font-size: 1.25rem
+
+    .grid-fa-icon
+        width: 3.5rem
+        height: 3.5rem
+
+@media (max-width: 768px)
+    .info-grid
+        &-item
+            >.item-text-container
+                >.item-text
+                    font-size: 1rem
+
+@media (max-width: 576px)
+    .home-info
+        display: none !important

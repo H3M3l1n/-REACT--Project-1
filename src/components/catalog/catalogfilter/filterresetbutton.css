@@ -1,0 +1,14 @@
+.filter-reset-button {
+  min-height: 2rem;
+  color: #2c2c2c;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: #d9d9d9;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.filter-reset-button:hover {
+  color: #0081c2;
+}/*# sourceMappingURL=filterresetbutton.css.map */

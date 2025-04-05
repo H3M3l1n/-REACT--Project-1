@@ -1,0 +1,21 @@
+
+@import "../../../../sass/var"
+
+.title-text
+    position: relative
+    width: 50%
+    text-shadow: $primary-shadow
+    &-name
+        margin: 0 0 1rem 0
+        font-size: 3.5rem
+        line-height: 4rem
+        color: $secondary-font-color
+    &-content
+        margin: 0
+        font-size: 2rem
+        color: $secondary-font-color
+        text-align: right
+
+@media (max-width: 1024px)
+    .title-text
+        display: none

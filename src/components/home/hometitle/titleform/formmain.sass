@@ -1,0 +1,47 @@
+@import "../../../../sass/var"
+
+.form-container
+    width: 100%
+    padding: 1rem 2rem
+    box-sizing: border-box
+
+.form-main
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.form-input
+    height: 3rem
+    width: 300px
+    padding: 0 1rem
+    line-height: 3rem
+    font-size: 1.25rem
+    background-color: $secondary-color
+    box-sizing: border-box
+    border: none
+    &-name
+        text-transform: capitalize
+    &-phone
+        margin: 0
+        letter-spacing: 0.2rem
+    &::placeholder
+        height: 3rem
+        line-height: 3rem
+        font-size: 1.25rem
+        color: $primary-color
+        letter-spacing: 0
+        text-transform: none
+
+.form-button
+    height: 3rem
+    width: 200px
+    color: $secondary-font-color
+    font-size: 1.25rem
+    font-weight: bold
+    background-color: $scheme-color
+    border: $primary-border
+    cursor: pointer
+    transition: border-color 0.25s
+    &:hover
+        border-color: $secondary-font-color

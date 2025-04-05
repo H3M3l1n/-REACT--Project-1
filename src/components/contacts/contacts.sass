@@ -1,0 +1,69 @@
+@import "../../sass/var"
+
+.contacts-section
+    height: auto
+    min-height: 100vh
+    background-color: $secondary-color
+    background-position: center
+    background-image: url($contacts-background-image)
+    background-size: cover
+    background-attachment: fixed
+
+.contacts-section-wrapper
+    flex-direction: column
+    background-color: $secondary-color
+    box-shadow: $primary-shadow
+
+.contacts-lists-container
+    width: 100%
+    margin-bottom: 1rem
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
+    grid-gap: 1rem
+
+.contacts-list
+    &:last-child
+        margin-right: 0
+
+.contacts-list-title
+    margin: 0
+    padding: 1rem 0
+    color: $secondary-font-color
+    text-align: center
+    background-color: $primary-color
+
+#contacts-list-operator
+    display: flex
+    justify-content: space-between
+
+.contacts-list-ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+.contacts-list-text
+    margin: 0
+    padding: 1rem 1rem 0
+    color: $primary-color
+    font-weight: 600
+
+.contacts-list-span
+    color: $scheme-color
+    font-size: 1.25rem
+
+.contacts-list-link
+    text-align: right
+    color: $primary-color
+
+.contacts-map-container
+    position: relative
+    height: 50vh
+    max-height: 50vh
+    border: 1px solid $primary-color
+    overflow: hidden
+
+.contacts-map
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center

@@ -1,0 +1,32 @@
+@import "../../sass/var"
+
+.job-list-container
+    width: 100%
+    height: 100%
+    padding-left: 0.5rem
+    overflow-y: scroll
+    &::-webkit-scrollbar
+        width: 0.5rem
+    &::-webkit-scrollbar-thumb
+        background-color: $scheme-color
+        &:hover
+            background-color: $scrollbar-hover-color
+
+.job-list-grid
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    align-items: flex-start
+    gap: 2rem
+
+@media (max-width: 1024px)
+    .job-list-grid
+        grid-template-columns: repeat(3, 1fr)
+
+@media (max-width: 768px)
+    .job-list-grid
+        grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 425px)
+    .job-list-grid
+        grid-template-columns: repeat(1, 1fr)

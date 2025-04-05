@@ -1,0 +1,40 @@
+@import "../../../../sass/var"
+
+.form-schedule
+    width: 100%
+    box-sizing: border-box
+    &::after
+        content: ''
+        display: block
+        border-bottom: $secondary-border
+        width: 90%
+        margin: 0 auto
+
+.schedule-name
+    padding: 1rem 2rem
+    box-sizing: border-box
+    &-text
+        margin: 0
+        font-size: 2rem
+        color: $secondary-font-color
+
+.schedule-day
+    height: 25px
+    width: 54.85px
+    margin-left: 2px
+    background-color: $secondary-color
+    font-size: 1.25rem
+    text-align: center
+    &:nth-child(n+6)
+        color: $secondary-font-color
+        background-color: $scheme-color
+    &-container
+        display: flex
+
+.schedule-time
+    padding: 1rem 2rem
+    box-sizing: border-box
+    &-text
+        margin: 0
+        font-size: 1.25rem
+        color: $secondary-font-color

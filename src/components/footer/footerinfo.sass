@@ -1,0 +1,73 @@
+@import "../../sass/var"
+
+.footer-info
+    width: 100%
+    height: 70%
+    margin-bottom: 1rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.footer-ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+.footer-phone-link
+    color: white
+    text-decoration: none
+
+.info-contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    &-text
+        margin: 0 0 1rem 0
+        color: $secondary-font-color
+        &:last-child
+            margin: 0
+
+.info-phone
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+.info-links
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+    &-item
+        color: $secondary-font-color
+        text-decoration: none
+    &-icon
+        width: 1.25rem
+        height: 1.25rem
+        margin-right: 0.5rem
+        color: $scheme-color
+    &-text
+        display: inline-block
+        line-height: 1.25rem
+        vertical-align: top
+
+@media (max-width: 768px)
+    .info-links
+        flex-wrap: wrap
+
+@media (max-width: 576px)
+    .info-contacts,
+    .info-links
+        transform: scale(0.75)
+
+@media (max-width: 425px)
+    .footer-info
+        flex-direction: column
+        justify-content: center
+    .info-contacts
+        &-text
+            margin-bottom: 0.5rem
+            &:last-child
+                margin-bottom: 1rem
+    .info-links
+        margin-left: 0
+        flex-wrap: nowrap
