@@ -1,0 +1,21 @@
+@import "../../sass/var"
+
+.customlink
+    padding: 0.25rem 0.75rem
+    vertical-align: middle
+    text-align: center
+    color: $secondary-font-color
+    font-size: 1.25rem
+    font-weight: bold
+    text-decoration: none
+    &-active
+        background-color: $scheme-color
+        cursor: default
+    &:hover
+        text-decoration: underline
+        text-decoration-color: $scheme-color
+
+@media (max-width: 1024px)
+    .customlink
+        padding: 0 0.75rem
+        font-size: 1rem
