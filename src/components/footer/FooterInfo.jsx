@@ -9,8 +9,6 @@ const FooterInfo = ({ data }) => {
     const phone = data.find((phoneData) => phoneData.dataType === 'phone');
     const social = data.find((socialData) => socialData.dataType === 'social');
 
-    console.log(social);
-
     return (
         <div className="footer-info">
             <div className="info-contacts">
@@ -18,11 +16,11 @@ const FooterInfo = ({ data }) => {
                     {address.city}, {address.street}
                 </p>
                 {phone.phones.map((item, index) => (
-                    <p key={index} className="info-contacts-text info-phone">
+                    <div key={index} className="info-contacts-text info-phone">
                         <span>{item.operator}:</span>
                         <ul className="footer-ul">
                             {item.phoneNumbers.map((item, index) => (
-                                <li key={index} calassName="footer-li">
+                                <li key={index} className="footer-li">
                                     <a
                                         href={`tel:${item.replace(
                                             /[()]/g,
@@ -35,14 +33,14 @@ const FooterInfo = ({ data }) => {
                                 </li>
                             ))}
                         </ul>
-                    </p>
+                    </div>
                 ))}
             </div>
             <div className="info-links">
                 {social.socials.map((social, index) => (
                     <ul key={index} className="footer-ul">
                         {social.socialData.map((item, index) => (
-                            <li key={index} calassName="footer-li">
+                            <li key={index} className="footer-li">
                                 <a href={item.link} className="info-links-item">
                                     <FontAwesomeIcon
                                         icon={

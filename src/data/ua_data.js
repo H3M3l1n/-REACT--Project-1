@@ -19,10 +19,10 @@ export const ua_data = {
             title: 'Телефони',
             phones: [
                 {
-                    operator: 'Київстар:',
+                    operator: 'Київстар',
                     phoneNumbers: ['+3(123)456-78-90', '+3(123)456-78-90'],
                 },
-                { operator: 'Lifecell:', phoneNumbers: ['+3(321)456-78-90'] },
+                { operator: 'Lifecell', phoneNumbers: ['+3(321)456-78-90'] },
             ],
         },
         {

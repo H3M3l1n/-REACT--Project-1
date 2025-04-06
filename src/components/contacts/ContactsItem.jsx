@@ -19,31 +19,23 @@ const ContactsItem = ({
             <h2 className="contacts-list-title">{title}:</h2>
             {dataType === 'schedule' ? (
                 <>
-                    <p className="contacts-list-text">
-                        {weekdays}
-                        <br />{' '}
-                        <span className="contacts-list-span">
-                            {weekdaysTime}
-                        </span>
-                    </p>
-                    <p className="contacts-list-text">
-                        {weekends}
-                        <br />
-                        <span className="contacts-list-span">
-                            {weekendsTime}
-                        </span>
-                    </p>
+                    <div className="contacts-list-text">
+                        <p className="contacts-list-p contacts-list-week">{weekdays}</p>
+                        <p className="contacts-list-p contacts-list-time">{weekdaysTime}</p>
+                        <p className="contacts-list-p contacts-list-week">{weekends}</p>
+                        <p className="contacts-list-p contacts-list-time">{weekendsTime}</p>
+                    </div>
                 </>
             ) : dataType === 'address' ? (
-                <p className="contacts-list-text">
+                <div className="contacts-list-text">
                     {city}
                     <br />
                     {street}
-                </p>
+                </div>
             ) : dataType === 'phone' ? (
                 <>
                     {phones.map((item, index) => (
-                        <p
+                        <div
                             key={index}
                             id="contacts-list-operator"
                             className="contacts-list-text"
@@ -64,11 +56,11 @@ const ContactsItem = ({
                                     </li>
                                 ))}
                             </ul>
-                        </p>
+                        </div>
                     ))}
                 </>
             ) : dataType === 'email' ? (
-                <p className="contacts-list-text">
+                <div className="contacts-list-text">
                     <ul className="contacts-list-ul">
                         {emailAddress.map((item, index) => (
                             <li key={index}>
@@ -81,14 +73,14 @@ const ContactsItem = ({
                             </li>
                         ))}
                     </ul>
-                </p>
+                </div>
             ) : dataType === 'social' ? (
                 socials.map((social, index) => (
-                    <p key={index} className="contacts-list-text">
+                    <div key={index} className="contacts-list-text">
                         <ul className="contacts-list-ul">
                             {social.socialData.map((item, index) => (
-                                <li>
-                                    <span key={index}>
+                                <li key={index}>
+                                    <span>
                                         <FontAwesomeIcon
                                             icon={
                                                 social.title === 'Telegram'
@@ -111,7 +103,7 @@ const ContactsItem = ({
                                 </li>
                             ))}
                         </ul>
-                    </p>
+                    </div>
                 ))
             ) : (
                 ''
