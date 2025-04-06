@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/-REACT--Project-1/static/css/main.517504d9.css",
+    "main.css": "/-REACT--Project-1/static/css/main.75a481b0.css",
     "main.js": "/-REACT--Project-1/static/js/main.1a99503d.js",
     "static/css/50.ac7fcf75.chunk.css": "/-REACT--Project-1/static/css/50.ac7fcf75.chunk.css",
     "static/js/50.788e5d52.chunk.js": "/-REACT--Project-1/static/js/50.788e5d52.chunk.js",
@@ -74,12 +74,12 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/-REACT--Project-1/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
     "static/media/roboto-greek-ext-300-normal.woff2": "/-REACT--Project-1/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/-REACT--Project-1/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
+    "index.html": "/-REACT--Project-1/index.html",
     "static/media/roboto-greek-ext-500-normal.woff": "/-REACT--Project-1/static/media/roboto-greek-ext-500-normal.eaa367bbd0b333a7f80b.woff",
     "static/media/roboto-greek-ext-300-normal.woff": "/-REACT--Project-1/static/media/roboto-greek-ext-300-normal.392a45a84c081c4b412d.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/-REACT--Project-1/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/-REACT--Project-1/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
-    "index.html": "/-REACT--Project-1/index.html",
-    "main.517504d9.css.map": "/-REACT--Project-1/static/css/main.517504d9.css.map",
+    "main.75a481b0.css.map": "/-REACT--Project-1/static/css/main.75a481b0.css.map",
     "main.1a99503d.js.map": "/-REACT--Project-1/static/js/main.1a99503d.js.map",
     "50.ac7fcf75.chunk.css.map": "/-REACT--Project-1/static/css/50.ac7fcf75.chunk.css.map",
     "50.788e5d52.chunk.js.map": "/-REACT--Project-1/static/js/50.788e5d52.chunk.js.map",
@@ -97,7 +97,7 @@
     "970.65719889.chunk.js.map": "/-REACT--Project-1/static/js/970.65719889.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.517504d9.css",
+    "static/css/main.75a481b0.css",
     "static/js/main.1a99503d.js"
   ]
 }
