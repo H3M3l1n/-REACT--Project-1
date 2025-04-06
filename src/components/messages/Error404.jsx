@@ -14,7 +14,7 @@ const Error404 = () => {
     <div className="error-404-page">
       <div className="error-404-page-wrapper">
         <img
-          src="../img/error.png"
+          src={`${process.env.PUBLIC_URL}/img/error.png`}
           alt="Sad face"
           className="error-404-page-image"
         />

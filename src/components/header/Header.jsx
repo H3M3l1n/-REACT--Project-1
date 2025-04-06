@@ -17,14 +17,17 @@ const Header = () => {
         <header id="header" className="header">
             <div className="header-wrapper">
                 <div className="header-logo">
-                    <a className="header-link" href="/">
+                    <a
+                        className="header-link"
+                        href={`${process.env.PUBLIC_URL}/`}
+                    >
                         <motion.img
                             variants={logoVariants}
                             initial={'hidden'}
                             animate={'visible'}
                             transition={{ delay: 1, duration: 2 }}
                             className="header-logo-image"
-                            src="/img/logo.png"
+                            src={`${process.env.PUBLIC_URL}/img/logo.png`}
                             alt="logo"
                         />
                     </a>

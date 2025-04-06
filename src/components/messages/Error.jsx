@@ -14,7 +14,7 @@ const Error = ({ errorCode }) => {
         <div className="error-page">
             <div className="error-page-wrapper">
                 <img
-                    src="../img/error.png"
+                    src={`${process.env.PUBLIC_URL}/img/error.png`}
                     alt="Sad face"
                     className="error-page-image"
                 />

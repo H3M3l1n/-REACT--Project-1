@@ -41,7 +41,7 @@ const About = () => {
                     </div>
                     <div className="about-image-wrapper">
                         <img
-                            src="../img/about_a.jpg"
+                            src={`${process.env.PUBLIC_URL}/img/about_a.jpg`}
                             alt="metal warehouse"
                             className="about-image"
                         />
@@ -59,7 +59,7 @@ const About = () => {
                 <div className="about-content-container container_c">
                     <div className="about-image-wrapper">
                         <img
-                            src="../img/about_c.jpg"
+                            src={`${process.env.PUBLIC_URL}/img/about_c.jpg`}
                             alt="metal warehouse"
                             className="about-image"
                         />

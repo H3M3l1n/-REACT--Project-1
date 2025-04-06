@@ -14,7 +14,7 @@ const Loading = () => {
     <div className="loading-page">
       <div className="loading-page-wrapper">
         <img
-          src="../img/loading.png"
+          src={`${process.env.PUBLIC_URL}/img/loading.png`}
           alt="Smile face"
           className="loading-page-image"
         />
